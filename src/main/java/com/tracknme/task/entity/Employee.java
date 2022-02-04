@@ -1,16 +1,14 @@
 package com.tracknme.task.entity;
 
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table
-public class Employee {
+public class Employee extends AbstractEmployeeToGenerateId {
 
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
     private String gender;
 
     private Integer age; //mandatory
@@ -22,6 +20,7 @@ public class Employee {
     private String neighborhood;
     private String city;
     private String state;
+
     public Employee() {
     }
 
@@ -31,10 +30,10 @@ public class Employee {
         this.age = age;
     }
 
-    public Employee(Long id, String gender, Integer age, String name,
+    public Employee(String gender, Integer age, String name,
                     String cep, String street, String neighborhood,
                     String city, String state) {
-        this.id = id;
+
         this.gender = gender;
         this.age = age;
         this.name = name;
@@ -45,12 +44,6 @@ public class Employee {
         this.state = state;
     }
 
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getGender() {
         return gender;

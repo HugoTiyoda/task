@@ -1,6 +1,7 @@
-package com.tracknme.task.entity;
+package com.tracknme.task.Repository;
 
 
+import com.tracknme.task.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

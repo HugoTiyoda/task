@@ -1,7 +1,7 @@
 package com.tracknme.task.service;
 
 import com.tracknme.task.entity.Employee;
-import com.tracknme.task.entity.EmployeeRepository;
+import com.tracknme.task.Repository.EmployeeRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -32,13 +32,13 @@ class EmployeeServiceTest {
         autoCloseable.close();
     }
 
-    @Test
-    void testGetAllEmployees() {
-        //when
-        underTest.getAllEmployees();
-        //then
-        verify(employeeRepository).findAll();
-    }
+//    @Test
+//    void testGetAllEmployees() {
+//        //when
+//        underTest.getAllEmployees();
+//        //then
+//        verify(employeeRepository).findAll();
+//    }
 
 
     @Test
