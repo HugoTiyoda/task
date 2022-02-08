@@ -15,7 +15,7 @@ public class Employee extends AbstractEmployeeToGenerateId {
     private String name; //mandatory
     private String cep; //mandatory
 
-    private String street;
+    private String street; //rtead
 
     private String neighborhood;
     private String city;
